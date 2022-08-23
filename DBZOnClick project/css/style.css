@@ -1,0 +1,97 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  height:100%;
+  width:100%;
+  background-image: url(../img/arena.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  
+}
+body img{
+  width:100%;
+  height:100%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+section{
+  display:flex;
+  flex:1;
+  /* border: 1px solid black; */
+}
+.leftSection, .rightSection{
+  display:flex;
+  height:800px;
+  width:100%;
+  /* border: 1px solid black; */
+}
+.leftSection{
+  display:flex;
+  flex-direction: column;
+}
+.leftInnerSection{
+  display:flex;
+  /* justify-content: space-around; */
+
+
+}
+.leftMidInnerSection{
+  display:flex;
+  /* justify-content: space-around; */
+}
+.select{
+  height: 100px;
+  width:100%;
+}
+.rightSection{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 150px 10px 150px 10px;
+}
+img{
+  width:100%;
+  height: 100%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.hidden{
+  display:none;
+}
+iframe{
+  background: cover;
+  max-width: 1800px;
+}
+h2{
+  color:White;
+  font-size: 70px;
+  height: 70px;
+  font-family: 'Bangers', cursive;
+}
